@@ -14,5 +14,4 @@ web-build/
 
 .env
 yarn.lock
-package.json
 package-lock.json
