@@ -13,3 +13,6 @@ web-build/
 .DS_Store
 
 .env
+yarn.lock
+package.json
+package-lock.json
