@@ -15,7 +15,7 @@ Project is created with:
 
 - Expo, React Native, Redux , Firebase
 - Firebase: store user data with Firestore Database
-- Routes: React Navigation https://reactnavigation.org/docs/getting-started - bottom-tabs
+- Routes: React Navigation (material-bottom-tabs)
 - Navigation icons: react-native-vector-icons (MaterialCommunityIcons)
 
 
