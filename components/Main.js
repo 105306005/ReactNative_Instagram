@@ -23,8 +23,9 @@ export class Main extends Component {
     return (
       <Tab.Navigator
         initialRouteName="Feed"
-        // activeColor="#f0edf6"
-        // inactiveColor="#3e2465"
+        activeColor="#FFFFFF"
+        inactiveColor="#FF599B"
+        barStyle={{ backgroundColor: "#F10066" }}
         labeled={false}
       >
         <Tab.Screen
