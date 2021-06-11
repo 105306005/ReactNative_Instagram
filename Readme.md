@@ -12,11 +12,16 @@ Website Demo✨: https://105306005.github.io/Quote-practice/
 ## Technologies
 
 Project is created with:
-
 - Expo, React Native, Redux , Firebase
+
+###Basic setup:
 - Firebase: store user data with Firestore Database
 - Routes: React Navigation (material-bottom-tabs)
 - Navigation icons: react-native-vector-icons (MaterialCommunityIcons)
+
+###ins function:
+- Camera : expo-camera - renders a preview for the device's front or back camera.
+- Pick Image : expo-image-picker - selecting images and videos from the phone's library or taking a photo with the camera.
 
 
 <h3 align="left">Languages and Tools:</h3>
