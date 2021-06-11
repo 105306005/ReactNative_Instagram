@@ -51,6 +51,7 @@ export default function Save(props) {
       })
       .then(function () {
         //   return to the Main Screen
+        // if (currentRoute.state.index !== 0)
         props.navigation.popToTop();
       });
   };
