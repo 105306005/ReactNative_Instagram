@@ -11,11 +11,10 @@ This project is a Instagram Clone.
 
 ## Technologies
 
-Project is created with:
-- Expo, React Native, Redux , Firebase
+Project is created with: Expo, React Native, Redux , Firebase
 
 ### Basic setup:
-- Firebase: store user data with Firestore Database
+- Firebase: store user data and post with Firestore Database
 - Routes: React Navigation (material-bottom-tabs)
 - Navigation icons: react-native-vector-icons (MaterialCommunityIcons)
 
