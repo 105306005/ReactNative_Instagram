@@ -1,5 +1,7 @@
 import { USER_STATE_CHANGE, USER_POSTS_STATE_CHANGE } from "../constants/index";
 import firebase from "firebase";
+import { SnapshotViewIOSComponent } from "react-native";
+require("firebase/firestore");
 
 export function fetchUser() {
   return (dispatch) => {

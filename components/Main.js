@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-
+import firebase from "firebase";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { fetchUser, fetchUserPosts } from "../redux/actions/index";
 
 import FeedScreen from "./main/Feed";
 import ProfileScreen from "./main/Profile";
+import SearchScreen from "./main/Search";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -40,6 +41,16 @@ export class Main extends Component {
           }}
         />
         <Tab.Screen
+          name="Search"
+          component={SearchScreen}
+          navigation={this.props.navigation}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons name="magnify" color={color} size={26} />
+            ),
+          }}
+        />
+        <Tab.Screen
           name="AddContainer"
           component={EmptyScreen}
           // Change the tab click behavior
@@ -59,6 +70,14 @@ export class Main extends Component {
         <Tab.Screen
           name="Profile"
           component={ProfileScreen}
+          listeners={({ navigation }) => ({
+            tabPress: (event) => {
+              event.preventDefault();
+              navigation.navigate("Profile", {
+                uid: firebase.auth().currentUser.uid,
+              });
+            },
+          })}
           options={{
             // tabBarLabel: "Profile",
             tabBarIcon: ({ color, size }) => (
